@@ -106,7 +106,7 @@ select * from order_details where order_details_id is null
                            or pizza_id is null
                            or quantity is null;
 
-#No missind data is present                      
+#No missing data is present                      
 
 
 #Basic questions
