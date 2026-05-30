@@ -25,12 +25,15 @@ Advanced:
 Let's get started
 
 #creating database pizza_sale
+
 create database pizza_sale;
 
 #checking whether database created or not
+
 show databases;
 
 #using pizza_sale database
+
 use pizza_sale;
 
 #creating table orders, order_details since it has many rows
@@ -65,8 +68,11 @@ select count(*) from order_details;
 #checking if we have duplicates in pizza id
 
 select pizza_id, count(*) as count from pizzas group by pizza_id having count(*)>1;
+
 select pizza_type_id, count(*) as count from pizza_types group by pizza_type_id having count(*)>1;
+
 select order_id, count(*) as count from orders group by order_id having count(*)>1;
+
 select order_details_id, count(*) as count from order_details group by order_details_id having count(*)>1;
 
 #no duplicates value found
