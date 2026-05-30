@@ -54,15 +54,23 @@ primary key(order_details_id) );
 #Basic data checking
 
 #checking data in tables
+
 select * from pizzas;
+
 select * from pizza_types;
+
 select * from orders;
+
 select * from order_details;
 
 #checking count of all tables
+
 select count(*) from pizzas;
+
 select count(*) from pizza_types;
+
 select count(*) from orders;
+
 select count(*) from order_details;
 
 #checking if we have duplicates in pizza id
